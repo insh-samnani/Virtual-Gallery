@@ -15,7 +15,7 @@ $err2="";
             $err1="* Please Upload The Picture.";
         }
         else{
-            $link = mysqli_connect("localhost", "root", "", "gallery1");
+            $link = mysqli_connect("localhost", "root", "", "gallery2");
         
             $initial=$_POST["initial"];
             $target_dir = "uploads/";
@@ -104,7 +104,7 @@ $err2="";
 
     <div id="searching">
         <?php
-        $link = mysqli_connect("localhost", "root", "", "gallery1");
+        $link = mysqli_connect("localhost", "root", "", "gallery2");
         $sql = "SELECT * FROM pictures";
         $results = mysqli_query($link, $sql);
         $Rows = array();
